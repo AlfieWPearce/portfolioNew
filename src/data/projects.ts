@@ -14,14 +14,14 @@ export const projects: Project[] = [
     description: "A real-time orbital model built with Three.js, simulating gravitation mechanics using Newtonian physics. I designed the experience to feel tactile and explanatory - planets drifting, shadows shifting, and moting responding subtly to user input. The project taught me how to blend science, maths, and visual storytelling into an interactive environemt. This is a passion project of mine, and as such, will be constantly evolving.",
     link: "https://github.com/AlfieWPearce/Solar-System",
     category: "pinned",
-    layout: "left"
+    layout: "right"
   },
   {
     title: "Bridge",
     description: "A full digital version of the card game Bridge, built from scratch - complete with auction logic, scoring rules, and animated card mechanics. The project pushed me into deeper algorithmic thinking and state management, as well as clean UI design inspired by physical playing cards. This is my Computer Science Coursework - and as such, the code will not be available until August 2026.",
     link: "https://github.com/AlfieWPearce/Bridge",
     category: "pinned",
-    layout: "right",
+    layout: "left",
     mediaType: "image",
     mediaTitle: "BridgeDemo.gif"
 
