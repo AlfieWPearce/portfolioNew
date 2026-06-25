@@ -1,0 +1,30 @@
+---
+const { project } = Astro.props;
+const mediaPath = project.mediaTitle && project.layout !== "center" ? `/media/${project.mediaTitle}` : null;
+---
+
+<a
+  href={project.link}
+  class={`project-card ${project.layout}`}
+>
+  <div class={`project-text ${project.layout}`}>
+    <h3>{project.title}</h3>
+    <p>{project.description}</p>
+  </div>
+  {
+  project.mediaType === "image" &&
+  mediaPath &&
+  (
+    <img src={mediaPath} alt={project.title} class="project-media" />
+  )
+  }
+  {
+  project.mediaType === "video" &&
+  mediaPath &&
+  (
+      <video class="project-media" autoplay muted loop playsinline >
+        <source src={mediaPath} type="video/mp4" />
+      </video>
+  )
+  }
+</a>

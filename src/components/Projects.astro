@@ -1,0 +1,33 @@
+---
+import ProjectCard from "../components/ProjectCard.astro";
+
+import {projects} from "../data/projects";
+const pinned = projects.filter(p => p.category === "pinned");
+const recent = projects.filter(p => p.category === "recent");
+const old = projects.filter(p => p.category === "old");
+---
+
+  <section id="projects">
+    <h2>Pinned Projects</h2>
+    {
+      pinned.map(p => (
+        <ProjectCard project={p} />
+      ))
+    }
+  </section>
+  <section>
+    <h2>Recent Projects</h2>
+    {
+      recent.map(p => (
+        <ProjectCard project={p} />
+      ))
+    }
+  </section>
+  <section>
+    <h2>Old Projects</h2>
+    {
+      old.map(p => (
+        <ProjectCard project={p} />
+      ))
+    }
+  </section>

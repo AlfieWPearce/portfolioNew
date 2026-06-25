@@ -1,0 +1,23 @@
+---
+import "../styles/global.css";
+import "../styles/layout.css";
+import "../styles/components.css";
+import "../styles/utilities.css";
+
+interface Props {
+title: string;
+}
+
+const {title} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{title}</title>
+</head>
+<body>
+  <slot />
+</body>
+</html>
