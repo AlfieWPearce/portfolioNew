@@ -12,6 +12,9 @@ This site showcases my projects, technical skills, and work experience. It is a 
 - HTML, CSS, TypeScript
 - Neovim
 
+## Run
+[Run](https://alfiewpearce.github.io/portfolioNew/)
+
 ## Features
 
 - Data-diven project system
