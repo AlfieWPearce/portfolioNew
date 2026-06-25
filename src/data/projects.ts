@@ -21,7 +21,10 @@ export const projects: Project[] = [
     description: "A full digital version of the card game Bridge, built from scratch - complete with auction logic, scoring rules, and animated card mechanics. The project pushed me into deeper algorithmic thinking and state management, as well as clean UI design inspired by physical playing cards. This is my Computer Science Coursework - and as such, the code will not be available until August 2026.",
     link: "https://github.com/AlfieWPearce/Bridge",
     category: "pinned",
-    layout: "right"
+    layout: "right",
+    mediaType: "video",
+    mediaTitle: "BridgeDemo.gif"
+
   },
   {
     title: "CLI Mini-Projects (tools for thought and work)",
@@ -52,7 +55,6 @@ export const projects: Project[] = [
     link: "https://github.com/AlfieWPearce/Boids",
     category: "recent",
     layout: "left"
-
   },
   {
     title: "Ghost Ink Inspector",
