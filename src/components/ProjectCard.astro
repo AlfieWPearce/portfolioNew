@@ -1,6 +1,6 @@
 ---
 const { project } = Astro.props;
-const mediaPath = project.mediaTitle && project.layout !== "center" ? `/media/${project.mediaTitle}` : null;
+const mediaPath = project.mediaTitle && project.layout !== "center" ? `../../public/media/${project.mediaTitle}` : null;
 ---
 
 <a
