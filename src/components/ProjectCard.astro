@@ -1,6 +1,7 @@
 ---
 const { project } = Astro.props;
-const mediaPath = project.mediaTitle && project.layout !== "center" ? `../../public/media/${project.mediaTitle}` : null;
+import { BASE_URL } from "astro:config"
+const mediaPath = project.mediaTitle && project.layout !== "center" ? `${BASE_URL}/media/${project.mediaTitle}` : null;
 ---
 
 <a
