@@ -22,7 +22,7 @@ export const projects: Project[] = [
     link: "https://github.com/AlfieWPearce/Bridge",
     category: "pinned",
     layout: "right",
-    mediaType: "video",
+    mediaType: "image",
     mediaTitle: "BridgeDemo.gif"
 
   },

@@ -1,6 +1,7 @@
 ---
 const { project } = Astro.props;
 const mediaPath = project.mediaTitle && project.layout !== "center" ? `${import.meta.env.BASE_URL}/media/${project.mediaTitle}` : null;
+const extension = project.mediaTitle?.split(".").pop()?.toLowerCase();
 ---
 
 <a
@@ -23,7 +24,7 @@ const mediaPath = project.mediaTitle && project.layout !== "center" ? `${import.
   mediaPath &&
   (
       <video class="project-media" autoplay muted loop playsinline >
-        <source src={mediaPath} type="video/mp4" />
+        <source src={mediaPath} type=`video/${extension}` />
       </video>
   )
   }
