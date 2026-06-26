@@ -4,8 +4,10 @@ import "../styles/layout.css";
 import "../styles/components.css";
 import "../styles/utilities.css";
 
+import "../background/main";
+
 interface Props {
-title: string;
+  title: string;
 }
 
 const {title} = Astro.props;
@@ -19,6 +21,8 @@ const {title} = Astro.props;
   <link rel="icon" href={`${import.meta.env.BASE_URL}/media/favicon.ico`} />
 </head>
 <body>
+  <canvas id="background"></canvas>
+
   <slot />
 </body>
 </html>
