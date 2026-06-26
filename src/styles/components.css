@@ -37,6 +37,7 @@ nav a.active {
   padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid var(--light);
+  background-color: var(--dark);
   text-decoration: none;
   color: inherit;
 }
