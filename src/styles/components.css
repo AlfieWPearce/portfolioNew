@@ -47,6 +47,10 @@ nav a.active {
   display: flex;
   gap: 2rem;
   align-items: center;
+  transition: transform 0.1s ease;
+}
+.projct-card:hover {
+  transform:  scale(1.1);
 }
 
 .project-card.left {
