@@ -44,9 +44,13 @@ export function initBackground(): void {
   }
   window.addEventListener("resize", resize);
 
+  //Get colour from css
+  const styles = getComputedStyle(document.documentElement);
+  const foregroundColor = styles.getPropertyValue("--light").trim();
+
   function frame(): void {
-    ctx.fillStyle = "white";
-    ctx.strokeStyle = "white";
+    ctx.fillStyle = foregroundColor;
+    ctx.strokeStyle = foregroundColor;
 
     const { width, height } = canvas;
 
