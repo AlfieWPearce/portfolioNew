@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "roboto", system-ui;
+  font-family: "Roboto", system-ui;
   margin: 0;
   background-color: var(--dark);
   color: var(--light);
