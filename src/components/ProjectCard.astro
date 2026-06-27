@@ -3,12 +3,14 @@ const { project } = Astro.props;
 const mediaPath = project.mediaTitle && project.layout !== "center" ? `${import.meta.env.BASE_URL}/media/${project.mediaTitle}` : null;
 const extension = project.mediaTitle?.split(".").pop()?.toLowerCase();
 const mediaAlt = `Preview of the ${project.title} project`;
+const projectId = project.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 ---
 
 <a
   href={project.link}
   class={`project-card ${project.layout}`}
   aria-label={`View the ${project.title} project`}
+  id={projectId}
 >
   <div class={`project-text ${project.layout}`}>
     <h3>{project.title}</h3>
