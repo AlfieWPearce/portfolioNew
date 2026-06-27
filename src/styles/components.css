@@ -234,18 +234,18 @@ img.project-media {
   text-align: left;
 }
 
-#manifesto h2 {
+#Manifesto h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
-#manifesto p {
+#Manifesto p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   opacity: 0.9;
 }
 
-#manifesto p:first-of-type:first-line {
+#Manifesto p:first-of-type:first-line {
   font-weight: 600;
 }
