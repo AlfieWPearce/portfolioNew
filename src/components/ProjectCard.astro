@@ -2,11 +2,13 @@
 const { project } = Astro.props;
 const mediaPath = project.mediaTitle && project.layout !== "center" ? `${import.meta.env.BASE_URL}/media/${project.mediaTitle}` : null;
 const extension = project.mediaTitle?.split(".").pop()?.toLowerCase();
+const mediaAlt = `Preview of the ${project.title} project`;
 ---
 
 <a
   href={project.link}
   class={`project-card ${project.layout}`}
+  aria-label={`View the ${project.title} project`}
 >
   <div class={`project-text ${project.layout}`}>
     <h3>{project.title}</h3>
@@ -16,14 +18,14 @@ const extension = project.mediaTitle?.split(".").pop()?.toLowerCase();
   project.mediaType === "image" &&
   mediaPath &&
   (
-    <img src={mediaPath} alt={project.title} class="project-media" />
+  <img src={mediaPath} alt={mediaAlt} class="project-media" />
   )
   }
   {
   project.mediaType === "video" &&
   mediaPath &&
   (
-      <video class="project-media" autoplay muted loop playsinline >
+      <video class="project-media" autoplay muted loop playsinline aria-hidden="true">
         <source src={mediaPath} type=`video/${extension}` />
       </video>
   )
