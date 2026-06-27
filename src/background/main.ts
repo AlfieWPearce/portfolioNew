@@ -14,6 +14,9 @@ export function initBackground(): void {
   const ctx = canvas.getContext("2d")!; //2D context of said canvas
   if (!ctx) throw new Error("2D rendering context not supported.")
 
+  ctx.fillStyle = "white";
+  ctx.strokeStyle = "white";
+
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
@@ -45,8 +48,6 @@ export function initBackground(): void {
   window.addEventListener("resize", resize);
 
   function frame(): void {
-    ctx.fillStyle = "white";
-
     const { width, height } = canvas;
 
     ctx.clearRect(0, 0, width, height);
@@ -78,7 +79,7 @@ export function initBackground(): void {
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
 
-          ctx.strokeStyle = `rgba(255,255,255,${1 - distSq / (MAX_DISTANCE_SQ)})`;
+          ctx.globalAlpha = 1 - distSq / MAX_DISTANCE_SQ;
           ctx.stroke();
         }
       }
