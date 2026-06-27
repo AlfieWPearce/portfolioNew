@@ -237,6 +237,9 @@ li {
   font-size: 1.05rem;
   line-height: 1.6;
 }
+.work-card h3 {
+  font-size: 1.5rem;
+}
 
 #Manifesto {
   max-width: 750px;
