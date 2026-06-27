@@ -104,18 +104,20 @@ nav a:hover {
   gap: 0.4rem;
   margin-top: 0.8rem;
 }
+
 .tech-pill {
-font-size: 0.75rem;
-padding: 0.25rem 0.6rem;
-border-radius: 999px;
-border: 1px solid var(--light);
-color: var(--light);
-opacity: 0.9;
-transition: 0.2s;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--light);
+  color: var(--light);
+  opacity: 0.9;
+  transition: 0.2s;
 }
+
 .tech-pill:hover {
-background-color: var(--light);
-color: var(--dark);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 .project-media {
@@ -223,4 +225,27 @@ img.project-media {
   border: 1px solid var(--light);
   display: flex;
   flex-direction: column;
+}
+
+#Manifesto {
+  max-width: 750px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+#manifesto h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#manifesto p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+#manifesto p:first-of-type:first-line {
+  font-weight: 600;
 }
