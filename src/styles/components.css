@@ -236,6 +236,11 @@ img.project-media {
   text-align: left;
 }
 
+#Manifesto a {
+  color: var(--light);
+  font-weight: 600;
+}
+
 #Manifesto h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
