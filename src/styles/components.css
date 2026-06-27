@@ -239,6 +239,7 @@ img.project-media {
 #Manifesto a {
   color: var(--light);
   font-weight: 600;
+  text-decoration: none;
 }
 
 #Manifesto h2 {
