@@ -58,7 +58,7 @@ nav a:hover {
   transition: transform 0.1s ease;
 }
 
-.projct-card:hover {
+.project-card:hover {
   transform: scale(1.1);
 }
 
@@ -96,6 +96,26 @@ nav a:hover {
 
 .project-text p {
   margin: 0;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+.tech-pill {
+font-size: 0.75rem;
+padding: 0.25rem 0.6rem;
+border-radius: 999px;
+border: 1px solid var(--light);
+color: var(--light);
+opacity: 0.9;
+transition: 0.2s;
+}
+.tech-pill:hover {
+background-color: var(--light);
+color: var(--dark);
 }
 
 .project-media {
