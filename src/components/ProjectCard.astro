@@ -18,7 +18,7 @@ const projectId = project.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replac
     {project.tech && (
       <div class="project-tech">
         {project.tech.map((t => (
-          <span class="tech-pill">(t)</span>
+        <span class="tech-pill">{t}</span>
         )))}
       </div>
     )}
