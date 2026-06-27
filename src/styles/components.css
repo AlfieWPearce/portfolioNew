@@ -186,22 +186,22 @@ img.project-media {
   transition: 0.2s;
 }
 
-#projects-btn {
+#about-btn {
   background-color: var(--dark);
   color: var(--light);
 }
 
-#projects-btn:hover {
-  border: var(--light);
+#about-btn:hover {
+  border: 2px solid var(--light);
   opacity: 0.85;
 }
 
-#about-btn {
+#projects-btn {
   border: 2px solid var(--light);
   color: var(--light);
 }
 
-#about-btn:hover {
+#projects-btn:hover {
   background-color: var(--light);
   color: var(--dark);
   opacity: 0.85;
