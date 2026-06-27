@@ -3,6 +3,9 @@ import "../styles/global.css";
 import "../styles/layout.css";
 import "../styles/components.css";
 
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro";
+
 import "../background/main";
 
 interface Props {
@@ -22,6 +25,10 @@ const {title} = Astro.props;
 <body>
   <canvas id="background"></canvas>
 
-  <slot />
+  <Header />
+  
+  <main id="container"><slot /></main>
+  
+  <Footer />
 </body>
 </html>

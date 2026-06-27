@@ -2,26 +2,22 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
+import Manifesto from "../components/Manifesto.astro";
 import Skills from "../components/Skills.astro";
 import Work from "../components/Work.astro";
-import Footer from "../components/Footer.astro";
 import Projects from "../components/Projects.astro";
 ---
 
 <Layout title="Alfie Pearce">
-  <Navbar />
+  <Hero />
 
-  <main id="container">
-    <Hero />
+  <Projects />
 
-    <Projects />
+  <Manifesto />
 
-    <Skills />
+  <Skills />
 
-    <Work />
-  </main>
-
-  <Footer />
+  <Work />
 
 <script type="module">
   import { initBackground } from "../background/main";
