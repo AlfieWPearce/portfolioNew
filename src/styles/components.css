@@ -184,6 +184,8 @@ img.project-media {
 }
 
 #hero-buttons a {
+  font-size: 1.05rem;
+  font-weight: 500;
   text-decoration: none;
   padding: 0.9rem 1.6rem;
   border-radius: 0.5rem;
@@ -231,6 +233,10 @@ img.project-media {
   display: flex;
   flex-direction: column;
 }
+li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
 
 #Manifesto {
   max-width: 750px;
@@ -259,4 +265,10 @@ img.project-media {
 
 #Manifesto p:first-of-type:first-line {
   font-weight: 600;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
