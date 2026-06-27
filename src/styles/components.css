@@ -10,17 +10,12 @@ header {
   top: 0;
 }
 
-.logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0;
-}
-
 nav {
   display: flex;
   gap: 1rem;
 }
 
+.logo,
 footer a,
 nav a {
   color: var(--dark);
@@ -36,6 +31,12 @@ nav a:hover {
   color: var(--light);
   background-color: var(--dark);
   opacity: 0.8;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 #skills,
