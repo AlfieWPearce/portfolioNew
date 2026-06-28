@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "Bridge",
     description: "A full digital version of the card game Bridge, built from scratch - complete with auction logic, scoring rules, and animated card mechanics. The project pushed me into deeper algorithmic thinking and state management, as well as clean UI design inspired by physical playing cards. This is my Computer Science Coursework - and as such, the code will not be available until August 2026.",
     link: "https://github.com/AlfieWPearce/Bridge",
-    tech: ["HTML","CSS","JS","Node.js","Socket.io","Express","p5.js"],
+    tech: ["HTML", "CSS", "JS", "Node.js", "Socket.io", "Express", "p5.js"],
     category: "pinned",
     layout: "left",
     mediaType: "image",
@@ -31,11 +31,19 @@ export const projects: Project[] = [
 
   },
   {
+    title: "Music Sync",
+    description: "A terminal-based music library managed for Linus featuring bulk metadata editing, album artwork management and intelligent synchronisation with portable music platers.",
+    link: "https://github.com/AlfieWPearce/MusicSync",
+    tech: ["python", "Textual", "Mutagen", "Pillow", "pyudev"],
+    category: "pinned",
+    layout: "right",
+  },
+  {
     title: "CLI Mini-Projects (tools for thought and work)",
     description: "A collection of small, cli-focused tools built to explore core software design principles: simplicity, composability, and long-term maintainability. The project deliberately avoids frameworks, databases and heavy abstractions, instead relying on plain text, standard libraries, and Unix-style worflows.",
     link: "https://github.com/AlfieWPearce/cli_mini-projects/tree/stable",
     tech: ["Python"],
-    category: "pinned",
+    category: "recent",
     layout: "center"
   },
   {
@@ -43,7 +51,7 @@ export const projects: Project[] = [
     description: "A simple SPH inspired Fluid Simulator created to learn c++ and practice vimium-style controls.",
     link: "https://github.com/AlfieWPearce/Particle-Simulator",
     category: "recent",
-    tech: ["c++","Raylib"],
+    tech: ["c++", "Raylib"],
     layout: "right",
     mediaType: "video",
     mediaTitle: "FluidSimulation.mp4"
